@@ -1,0 +1,100 @@
+/* 全局样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background-color: #f9f9f9;
+}
+
+/* 标题样式 */
+h1 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: #34495e;
+    margin-top: 30px;
+}
+
+/* 链接样式 */
+a {
+    color: #e74c3c;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 图片通用样式 */
+img {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 5px;
+    transition: 0.3s;  /* 添加过渡效果，让变化更平滑 */
+}
+
+/* 段落样式 - 所有p标签默认红色20px */
+p {
+    font-size: 20px;
+    color: red;
+}
+
+/* 段落悬停效果 - 鼠标指上去背景变绿色 */
+p:hover {
+    background: green;
+}
+
+/* ===== 类选择器示例 ===== */
+/* 任何带有 class="standout" 的元素文字变蓝色 */
+.standout {
+    color: blue;
+    font-weight: bold;
+}
+
+/* 同时是h2标签且带有class="standout"的元素文字变红色 */
+h2.standout {
+    color: red;
+}
+
+/* 新格式刷1：黄底斜体 */
+.highlight {
+    background-color: yellow;
+    font-style: italic;
+}
+
+/* 新格式刷2：红边框圆角盒子 */
+.card {
+    border: 2px solid red;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    margin: 10px 0;
+}
+
+/* ===== 图片悬停效果 ===== */
+/* 鼠标指上去变成圆形 */
+.image1:hover {
+    border-radius: 50%;
+}
+
+/* 鼠标指上去变成大圆角矩形 */
+.image2:hover {
+    border-radius: 30px;
+}
+
+/* 鼠标指上去变半透明 */
+.image3:hover {
+    opacity: 0.8;
+}
+
+/* 鼠标指上去变70%灰度 */
+.image4:hover {
+    filter: grayscale(70%);
+}
+
+/* 鼠标指上去变模糊 */
+.image5:hover {
+    filter: blur(5px);
+}
